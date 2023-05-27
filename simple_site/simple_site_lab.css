@@ -1,0 +1,43 @@
+body {
+    width: 600px;
+    background-color: skyblue;
+    color: white;
+    border: 5px solid rgb(0, 175, 0);
+    margin: 20px auto 20px;
+    padding: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+ul {
+    display: flex;
+    justify-content: center;
+    column-gap: 5px;
+}
+
+li {
+    display: inline;
+    font-weight: bold;
+}
+
+a {
+    color: rgb(0, 175, 0);
+}
+
+h1 {
+    font-family: 'IBM Plex Serif', sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+
+img {
+    width: 175px;
+    height: auto;
+    float: right;
+}
+
+p {
+    color: rgb(255, 255, 233);
+    font-family:'Times New Roman', Times, serif
+}
