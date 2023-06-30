@@ -1,6 +1,5 @@
-//Example fetch using pokemonapi.co
-document.querySelector('button').addEventListener('click', getFetch)
 
+document.querySelector('button').addEventListener('click', getFetch)
 document.querySelector('#title').innerText = localStorage.getItem('books')
 
 function getFetch(){
@@ -27,5 +26,7 @@ function getFetch(){
       .catch(err => {
           console.log(`error ${err}`)
       });
+
 }
+
 
