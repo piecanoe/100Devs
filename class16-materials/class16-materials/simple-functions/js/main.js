@@ -19,6 +19,7 @@ function product(n1, n2, n3){
 }
 
 
+
 // //---Medium
 // //create a function that takes in three numbers. Add the first two numbers and return the remainder of dividing the sum of the first two numbers by the third number
 function remainder(number1, number2, number3){
