@@ -1,53 +1,54 @@
 // *Variables*
 // Create a variable and console log the value
-let zebra = 13
-console.log(zebra)
+let kendama = 3
+console.log(kendama)
 
-// Create a variable, add 10 to it, and alert the value
-let apple = 2
-apple += 8
+// // Create a variable, add 10 to it, and alert the value
+let rubiksCube = 10
+rubiksCube += 10
+console.log(rubiksCube)
 
-alert(apple)
-
-// *Functions*
-// Create a function that subtracts 4 numbers and alerts the difference
-function butt(num1, num2, num3, num4) {
-    alert(num1 - num2 - num3 - num4)
+// // *Functions*
+// // Create a function that subtracts 4 numbers and alerts the difference
+function nintendo(n1, n2, n3 ,n4) {
+    let difference = n1 - n2 - n3 - n4
+    alert(difference)
 }
-butt(6, 2, 3, 63)
+nintendo(3, 5, 6, 10)
 
 // Create a function that divides one number by another and returns the remainder
-function glasses(sun, moon) {
-    return sun % moon
+function sony(num1, num2){
+    let remainder = num1 % num2
+    return remainder
 }
-console.log(glasses(5, 2))
+console.log(sony(6, 13))
 
 // *Conditionals*
 // Create a function that adds two numbers and if the sum is greater than 50 alert Jumanji
-function umbrella(Ey1, Ey2) {
-    if (Ey1 + Ey2 > 50) {
+function robin(a, b){
+    if (a +b > 50){
         alert('Jumanji')
-    } else {
-        alert('Nomanji')
     }
 }
-umbrella(5, 23)
 
+robin(40, 12)
 
 // Create a function that multiplys three numbers and if the product is divisible by 3 alert ZEBRA
-function brink(jordy, gabby, peter) {
-    let pupNSuds = jordy * gabby * peter
-    if (pupNSuds % 3 === 0) {
+function miyagi(one, two, three){
+    if ((one * two * three) % 3 === 0){
         alert('ZEBRA')
+    }else{
+        alert('zubruh')
     }
 }
-brink(3, 3, 1)
+miyagi(5, 70, 22)
+
 
 //*Loops*
 //Create a function that takes in a word and a number. Console log the word x times where x was the number passed in
-function johnnyTsunami(word, num) {
-    for (let i = 1; i <= num; i++){
+function circle(word, x){
+    for (let i = 1; i <= x; i++){
         console.log(word)
     }
 }
-johnnyTsunami('wonderful', 21)
+circle('Jason', 4)
