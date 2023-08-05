@@ -1,12 +1,21 @@
-//Create a function that takes in an array of numbers. Return a new array containing every even number from the original array (do not use map or filter)
-function onlyEvens(arr) {
-    let evens = []
-    arr.forEach (num => {
-        if (num % 2 === 0) {
-            evens.push(num)
-        }
-    })
+//Create a function that takes in an array of numbers. Return a new array containing every even number from the original array 
 
-    return evens
+// function onlyEvensFinder(arr){
+//     let onlyEvens = []
+//     arr.forEach (num => {
+//         if (num % 2 === 0){
+//             onlyEvens.push(num)
+//          }
+//     })
+//     return onlyEvens
+// }
+
+// console.log(onlyEvensFinder([1, 2, 33, 44, 52, 4])) 
+
+// Bonus: use map or filter)
+
+function onlyEvensFinder(arr){
+    return arr.filter( num => num % 2 === 0)
 }
-console.log(onlyEvens([1, 2, 3, 4, 5, 6]))
+
+console.log(onlyEvensFinder([1, 2, 33, 44, 52, 4])) 
