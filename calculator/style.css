@@ -1,0 +1,11 @@
+body {
+    background-color: grey;
+}
+#screen {
+    background-color: white;
+    position: relative;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    width: 450px;
+    height: 75px;
+}

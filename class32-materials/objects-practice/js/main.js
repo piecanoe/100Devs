@@ -1,79 +1,59 @@
-// Come up with with a parent class
-// Extend that parent class into two children
-// Use Encapsulation, Abstraction, Inheritance, and Polymorphism 
+// // Come up with with a parent class
+// // Extend that parent class into two children
+// // Use Encapsulation, Abstraction, Inheritance, and Polymorphism 
 
 
-class Skater{
-    constructor(name){
+class Contractor {
+    constructor(name, role) {
         this._name = name
+        this._role = role
     }
-}
-
-class StreetSkater extends Skater {
-    constructor(name, terrain){
-        super(name)
-        this._terrain = terrain
+    get name()  {
+        return this._name
     }
-    speak(){
-        console.log(`Hi there! I am a ${this._terrain} skater.`)
-    }
-}
-
-
-class Goofy extends StreetSkater {
-    constructor(name, terrain, stance){
-        super(name, terrain)
-        this._stance = stance
+    get role() {
+        return this._role
     }
     speak(){
-        console.log(`Hi there! My name is ${this._name} and I am a ${this._stance}-footed ${this._terrain} skater`)
+        console.log(`Hi! I\'m ${this._name}, a ${this._role} at 100Devs`)
     }
 }
 
-
-class Regular extends StreetSkater {
-    constructor(name, terrain, stance){
-        super(name, terrain)
-        this._stance = stance
+class Front extends Contractor {
+    constructor(name, role, tech) {
+        super(name, role)
+        this._tech = tech
     }
-    speak(){
-        console.log(`Hi there! My name is ${this._name} and I am a ${this._stance}-footed ${this._terrain} skater`)
+    get tech() {
+        return this._tech
+    }
+    speak() {
+        console.log(`Hi! I\'m ${this._name}, a ${this._role} at 100Devs and I use ${this._tech}`)
     }
 }
 
+class Back extends Contractor {
+    constructor(name, role, tech){
+        super(name, role)
+        this._tech = tech
+    }
+    get tech() {
+        return this._tech
+    }
+    speak() {
+        console.log(`Hi! I\'m ${this._name}, a ${this._role} at 100Devs and I use ${this._tech}`)
+    }
+}
 
-let elissa = new StreetSkater ('Elissa', 'street')
-let leo = new Goofy ('Leo', 'street', 'goofy')
-let tom = new Regular ('Tom', 'street', 'regular')
-
-
-
-
-
-
-
-
-
-
-
-
-
+let karen = new Front ('Karen', 'front-end dev', 'Javascript')
+let simba = new Back ('Simba', 'back-end dev', 'Node.js')
 
 
+let agencyList = [karen, simba]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+for(person of agencyList){
+    person.speak()
+}
 
 
 

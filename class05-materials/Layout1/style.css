@@ -1,0 +1,20 @@
+header {
+    height: 100px;
+    width: 100%;
+    border-bottom: 2px solid gray;
+    
+}
+
+section {
+    /* height: 33.3333vh;
+    width: 33.3333vw; */
+    border-left: 2px solid gray;
+    float: left;
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+    border-top: 2px solid gray;
+    
+}
